@@ -401,7 +401,7 @@ export default function App() {
                  </div>
 
                  <p className="text-base text-neutral-600 font-medium leading-relaxed">
-                   Recognised for open source advocacy and developer education. Cultivates a pan-African developer network directly aligned with Greenpeace Africa’s multi-country operational model. Travelled to Kigali, Rwanda for community leadership training.
+                   Recognised for open source advocacy and developer education across various communities. Cultivates a pan-African developer network, building and supporting open source initiatives. Travelled to Kigali, Rwanda for community leadership training.
                  </p>
                </div>
             </motion.div>
