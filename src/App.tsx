@@ -7,7 +7,8 @@ import {
   Cpu, 
   Layers, 
   Globe, 
-  ArrowRight, 
+  ArrowRight,
+  ArrowUp,
   Server, 
   Send,
   Image as ImageIcon,
@@ -22,13 +23,34 @@ import {
 } from 'lucide-react';
 
 const BrushStroke = () => (
-  <svg className="absolute w-[140%] h-[140%] -top-[20%] -left-[20%] text-[#1B4B43] -z-10 opacity-90" viewBox="0 0 200 200" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  <svg className="absolute w-[120%] h-[120%] -top-[10%] -left-[10%] text-[#1B4B43] -z-10 opacity-90" viewBox="0 0 200 200" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
     <path d="M45.7,-76.4C58.9,-69.3,69.2,-55.4,78.2,-41.2C87.1,-27,94.7,-12.5,93.4,1.4C92.1,15.2,81.9,28.3,71.2,39.6C60.5,50.8,49.3,60.1,36.5,67.8C23.7,75.4,9.3,81.3,-5.1,89.5C-19.6,97.7,-34.2,88.1,-46.8,78.7C-59.4,69.4,-70.1,60.3,-77.3,48.4C-84.5,36.5,-88.2,21.8,-87.3,7.9C-86.4,-6.1,-80.8,-19.3,-72.5,-29.8C-64.2,-40.3,-53.2,-48,-41.5,-54.6C-29.8,-61.2,-17.4,-66.6,-2.2,-63.1C13.1,-59.6,26.1,-47.1,45.7,-76.4Z" transform="translate(100 100) scale(1.1)" />
   </svg>
 );
 
 export default function App() {
   const [terminalInput, setTerminalInput] = useState('');
+  const [showTopBtn, setShowTopBtn] = useState(false);
+  
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 400) {
+        setShowTopBtn(true);
+      } else {
+        setShowTopBtn(false);
+      }
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
+  };
+
   const [chatHistory, setChatHistory] = useState([
     { 
       id: 1, 
@@ -97,7 +119,7 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-[#FDF9F1] text-[#1C1D20] font-sans selection:bg-[#FFC83A]/40 selection:text-[#1C1D20]">
+    <div className="min-h-screen bg-[#FDF9F1] text-[#1C1D20] font-sans selection:bg-[#FFC83A]/40 selection:text-[#1C1D20] overflow-x-hidden relative">
       
       {/* NAVIGATION BAR */}
       <nav className="flex justify-between items-center py-6 px-6 md:px-12 max-w-[90rem] mx-auto">
@@ -123,9 +145,9 @@ export default function App() {
              <span className="text-[#FFC83A] font-black text-sm tracking-[0.2em] uppercase">Cloud Engineer &amp; Systems Thinker</span>
           </div>
           
-          <h1 className="text-[3.5rem] md:text-[5.5rem] lg:text-[6.5rem] font-black tracking-tighter leading-[0.95] text-[#1C1D20]">
+          <h1 className="text-[3.2rem] md:text-[5rem] lg:text-[6rem] font-black tracking-tighter leading-[0.95] text-[#1C1D20]">
             Building <br/> <span className="text-[#1B4B43]">resilient</span> <br/>
-            digital <br/> <span className="bg-[#FFC83A] px-4 inline-block mt-2 transform -rotate-2 text-[3.2rem] md:text-[5rem] lg:text-[5.5rem]">ecosystems.</span>
+            digital <br/> <span className="bg-[#FFC83A] px-4 inline-block mt-2 transform -rotate-2 text-[3rem] md:text-[4.8rem] lg:text-[5.5rem]">ecosystems.</span>
           </h1>
           
           <p className="text-xl md:text-2xl text-neutral-600 max-w-lg font-medium leading-relaxed">
@@ -587,6 +609,16 @@ export default function App() {
           </div>
         </div>
       </footer>
+
+      {showTopBtn && (
+        <button 
+          onClick={scrollToTop} 
+          className="fixed bottom-8 right-8 z-50 bg-[#1B4B43] text-white p-4 rounded-full shadow-2xl hover:-translate-y-2 transition-all flex items-center justify-center"
+          aria-label="Scroll to top"
+        >
+          <ArrowUp className="w-6 h-6" />
+        </button>
+      )}
     </div>
   );
 }
