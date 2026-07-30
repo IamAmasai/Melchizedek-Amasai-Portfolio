@@ -162,7 +162,7 @@ export default function App() {
           </h1>
           
           <p className="text-lg md:text-xl text-neutral-600 max-w-lg font-medium leading-relaxed">
-            Systems administrator and cloud engineer building the operational infrastructure for African institutions. We build for the actual conditions, not despite them.
+            Founder & CEO of Ansai Technologies, cloud engineer, and systems thinker — building the operational infrastructure for African institutions. We build for the actual conditions, not despite them.
           </p>
 
           <div className="flex flex-wrap items-center gap-4 pt-4">
