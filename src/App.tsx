@@ -223,7 +223,7 @@ export default function App() {
         </motion.div>
       </section>
 
-      {/* PHILOSOPHY & CAPABILITIES */}
+      {/* ABOUT & SKILLS */}
       <section id="about" className="bg-white py-24 md:py-32 rounded-t-[3rem] md:rounded-t-[6rem] shadow-[0_-20px_80px_-15px_rgba(0,0,0,0.05)] relative z-20">
         <div className="max-w-7xl mx-auto px-6 md:px-12 grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-20">
 
@@ -238,24 +238,24 @@ export default function App() {
              <div className="bg-[#1B4B43] text-white p-6 md:p-8 rounded-3xl shadow-2xl flex items-center gap-5 md:gap-6 transform -rotate-2 hover:rotate-0 transition-transform duration-300 relative z-10 w-full">
                <div className="bg-white/20 p-5 rounded-2xl"><Server className="w-8 h-8"/></div>
                <div>
-                 <h3 className="text-2xl font-black mb-1">Infrastructure Ops</h3>
-                 <p className="text-base text-white/80 font-medium">Enterprise Linux/Windows &amp; Multi-site management.</p>
+                 <h3 className="text-2xl font-black mb-1">Agentic Systems Engineering</h3>
+                 <p className="text-base text-white/80 font-medium">Constitutional governance for autonomous coding agents.</p>
                </div>
              </div>
 
              <div className="bg-[#FFC83A] text-[#1C1D20] p-6 md:p-8 rounded-3xl shadow-2xl flex items-center gap-5 md:gap-6 transform translate-x-4 -rotate-1 hover:rotate-0 transition-transform duration-300 z-20 relative w-full">
                <div className="bg-white/40 p-4 md:p-5 rounded-2xl"><Cloud className="w-7 h-7 md:w-8 md:h-8"/></div>
                <div>
-                 <h3 className="text-xl md:text-2xl font-black mb-1">Cloud Architecture</h3>
-                 <p className="text-sm md:text-base text-neutral-800 font-medium">GCP, AWS, Cloudflare, Multi-tenant schemas.</p>
+                 <h3 className="text-xl md:text-2xl font-black mb-1">Agent Architecture</h3>
+                 <p className="text-sm md:text-base text-neutral-800 font-medium">Full AI agent system architecture under ansai-technologies.</p>
                </div>
              </div>
 
              <div className="bg-[#FDF9F1] text-[#1C1D20] p-6 md:p-8 rounded-3xl shadow-xl flex items-center gap-5 md:gap-6 transform rotate-1 hover:rotate-0 transition-transform duration-300 relative z-10 w-full border border-neutral-200">
                <div className="bg-white p-4 md:p-5 rounded-2xl shadow-sm"><Lock className="w-7 h-7 md:w-8 md:h-8 text-teal-600"/></div>
                <div>
-                 <h3 className="text-xl md:text-2xl font-black mb-1">Security &amp; Compliance</h3>
-                 <p className="text-sm md:text-base text-neutral-600 font-medium">RBAC design &amp; Data Protection Act adherence.</p>
+                 <h3 className="text-xl md:text-2xl font-black mb-1">Research &amp; Eval Discipline</h3>
+                 <p className="text-sm md:text-base text-neutral-600 font-medium">Architecture and evaluation patterns from YC, Agentuity, LCA, and Kavak.</p>
                </div>
              </div>
           </motion.div>
@@ -267,39 +267,45 @@ export default function App() {
             transition={{ duration: 0.8 }}
             className="space-y-8 lg:space-y-10 flex flex-col justify-center"
           >
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-black tracking-tighter text-[#1C1D20] leading-[1.1]">
-              Infrastructure, not just <span className="text-[#FFC83A] underline decoration-8 underline-offset-4">applications.</span>
-            </h2>
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-black tracking-tighter text-[#1C1D20] leading-[1.1]">About Me</h2>
             <div className="space-y-6 text-lg md:text-xl text-neutral-600 font-medium leading-relaxed">
               <p>
-                My work centers on <strong>Utu Engineering</strong> — building with full awareness of the human being on the other side of every screen. Every human being carries inherent dignity that no algorithm can confer or remove. This conviction is rooted in my worldview, faith, and a deep commitment to stewardship.
+                Juma Melchizedek Amasai (Amasai), based in Nairobi, Kenya. Founder &amp; CEO of Ansai Technologies, a holding company building digital infrastructure for African organizations and currently undergoing a foundational restructuring around AI-native organization design. Also CEO of Beautify by Angel.
               </p>
               <p className="p-6 bg-[#FDF9F1] rounded-3xl border border-[#FFC83A]/30 text-[#1C1D20]">
-                As an <strong className="text-[#FFC83A] font-black mr-1">Ecosystem Builder</strong>, 
-                I operate under a <em>Pamoja</em> culture (shared ownership). I believe Africa's greatest challenge is not a lack of technology, but a lack of infrastructure designed for its actual conditions. We build for intermittent connectivity, local-first architectures, and absolute data sovereignty.
+                GitHub Campus Expert and GDG Nairobi member. Systems thinker specializing in AI infrastructure, the agentic layer, and the inference/deployment stack. Recently launched <a href="https://theengineersjournal.ansaitechnologies.co.ke/" target="_blank" rel="noreferrer" className="underline decoration-2 underline-offset-4">The Engineer&apos;s Journal</a>, a systems-thinking knowledge platform under Ansai.
               </p>
+              <div className="p-6 bg-white rounded-3xl border border-neutral-200">
+                <h3 className="text-xl font-black text-[#1C1D20] uppercase tracking-wider mb-4">Skillset: Agentic Systems Engineering</h3>
+                <ul className="space-y-3 text-base md:text-lg text-neutral-700 list-disc pl-5">
+                  <li>Designed a constitutional governance framework for autonomous coding agents: three-tier AGENTS.md structure, enforce-vs-know distinction, decision logging, and amendment governance.</li>
+                  <li>Authored <em>Constitutional Governance for Autonomous Coding Agents</em>, grounded in a real production primitive-purity violation.</li>
+                  <li>Architected a full AI agent system under the ansai-technologies GitHub organization.</li>
+                  <li>Informed by recent research into agent architecture and eval discipline (YC, Agentuity, LCA, Kavak).</li>
+                </ul>
+              </div>
             </div>
                    <div className="flex gap-12 pt-4 border-t border-neutral-100 flex-wrap">
                <div>
                  <div className="flex items-center gap-2 mb-2">
                     <Award className="w-6 h-6 text-[#1B4B43]" />
-                    <span className="font-bold text-neutral-900 text-lg">Foundations</span>
+                    <span className="font-bold text-neutral-900 text-lg">Governance</span>
                  </div>
-                 <div className="text-sm text-neutral-500 font-bold uppercase tracking-widest">GitHub Cert.</div>
+                 <div className="text-sm text-neutral-500 font-bold uppercase tracking-widest">Three-Tier AGENTS.md</div>
                </div>
                <div>
                  <div className="flex items-center gap-2 mb-2">
                     <Award className="w-6 h-6 text-[#1B4B43]" />
-                    <span className="font-bold text-neutral-900 text-lg">Actions</span>
+                    <span className="font-bold text-neutral-900 text-lg">Publication</span>
                  </div>
-                 <div className="text-sm text-neutral-500 font-bold uppercase tracking-widest">GitHub Cert.</div>
+                 <div className="text-sm text-neutral-500 font-bold uppercase tracking-widest">Constitutional Governance Paper</div>
                </div>
                <div>
                  <div className="flex items-center gap-2 mb-2">
                     <Database className="w-6 h-6 text-[#FFC83A]" />
-                    <span className="font-bold text-neutral-900 text-lg">DB Engineer</span>
+                    <span className="font-bold text-neutral-900 text-lg">System Scope</span>
                  </div>
-                 <div className="text-sm text-neutral-500 font-bold uppercase tracking-widest">Google Cloud</div>
+                 <div className="text-sm text-neutral-500 font-bold uppercase tracking-widest">ansai-technologies Org</div>
                </div>
              </div>
           </motion.div>
@@ -461,7 +467,7 @@ export default function App() {
                  <span className="w-10 h-[3px] bg-[#FFC83A]"></span>
                  <span className="text-[#FFC83A] font-black text-xs md:text-sm tracking-[0.2em] uppercase">Digital Infrastructure</span>
               </div>
-              <h2 className="text-4xl md:text-5xl lg:text-6xl font-black tracking-tighter">Projects &amp; Prototypes</h2>
+              <h2 className="text-4xl md:text-5xl lg:text-6xl font-black tracking-tighter">Recent Shipped Work</h2>
             </div>
             <div className="flex flex-col items-start md:items-end gap-3">
               <a href="https://github.com/IamAmasai" target="_blank" rel="noreferrer" className="flex items-center gap-3 font-bold text-lg hover:text-[#FFC83A] transition-colors pb-2 border-b-2 border-transparent hover:border-[#FFC83A]">
@@ -488,7 +494,7 @@ export default function App() {
                </div>
                <h3 className="text-3xl font-black mb-4 leading-tight">EduManage <br/> Platform</h3>
                <p className="text-base text-neutral-400 mb-8 font-medium leading-relaxed">
-                 Multi-tenant TypeScript/Fastify/Prisma/PostgreSQL platform with M-PESA payments, CBC/CBE grading, and 22-role RBAC for schools across Kenya.
+                 Production multi-tenant school management platform for Kenyan secondary schools (TypeScript, Fastify, Prisma, PostgreSQL, React/Vite, Cloudflare Pages/R2). CBC/CBE compliance, M-PESA Daraja integration, and 22-role RBAC. Actively deployed with partner schools.
                </p>
                <div className="flex gap-2 flex-wrap mb-6">
                  <span className="bg-white/10 text-white text-[10px] px-3 py-1.5 rounded-full font-bold uppercase tracking-wider">Fastify</span>
@@ -509,17 +515,17 @@ export default function App() {
                className="bg-[#2A2B2E] rounded-[2rem] p-6 md:p-8 group hover:-translate-y-4 transition-transform duration-500 lg:translate-y-8 shadow-2xl relative"
              >
                <div className="bg-[#1B4B43] h-56 rounded-3xl mb-8 p-6 flex items-center justify-center relative overflow-hidden">
-                  <Network className="w-24 h-24 text-teal-900 opacity-50 transform group-hover:scale-110 transition-transform duration-500" />
-                  <div className="absolute top-4 left-4 bg-white/10 backdrop-blur-md text-white text-[10px] font-black px-4 py-2 rounded-full uppercase tracking-widest">Open Source</div>
+                  <Cpu className="w-24 h-24 text-teal-900 opacity-50 transform group-hover:scale-110 transition-transform duration-500" />
+                  <div className="absolute top-4 left-4 bg-white/10 backdrop-blur-md text-white text-[10px] font-black px-4 py-2 rounded-full uppercase tracking-widest">Marketplace</div>
                </div>
-               <h3 className="text-3xl font-black mb-4 leading-tight">ArdhiX Land <br/> Governance</h3>
+               <h3 className="text-3xl font-black mb-4 leading-tight">The Closet</h3>
                <p className="text-base text-neutral-400 mb-8 font-medium leading-relaxed">
-                 Blockchain-based land registry (Next.js + Supabase on Base) applying Digital Public Infrastructure principles to title deed management in East Africa.
+                 Chat-first, escrow-backed P2P resale marketplace for pre-owned clothing in Kenya.
                </p>
                <div className="flex gap-2 flex-wrap mb-6">
-                 <span className="bg-white/10 text-white text-[10px] px-3 py-1.5 rounded-full font-bold uppercase tracking-wider">Next.js</span>
-                 <span className="bg-white/10 text-white text-[10px] px-3 py-1.5 rounded-full font-bold uppercase tracking-wider">Supabase</span>
-                 <span className="bg-white/10 text-white text-[10px] px-3 py-1.5 rounded-full font-bold uppercase tracking-wider">Blockchain</span>
+                 <span className="bg-white/10 text-white text-[10px] px-3 py-1.5 rounded-full font-bold uppercase tracking-wider">Chat-first</span>
+                 <span className="bg-white/10 text-white text-[10px] px-3 py-1.5 rounded-full font-bold uppercase tracking-wider">Escrow-backed</span>
+                 <span className="bg-white/10 text-white text-[10px] px-3 py-1.5 rounded-full font-bold uppercase tracking-wider">P2P</span>
                </div>
              </motion.div>
 
@@ -532,18 +538,66 @@ export default function App() {
                className="bg-[#2A2B2E] rounded-[2rem] p-6 md:p-8 group hover:-translate-y-4 transition-transform duration-500 shadow-2xl relative"
              >
                <div className="bg-blue-500 h-56 rounded-3xl mb-8 p-6 flex items-center justify-center relative overflow-hidden">
-                  <Server className="w-24 h-24 text-blue-900 opacity-50 transform group-hover:scale-110 transition-transform duration-500" />
-                  <div className="absolute top-4 left-4 bg-white/20 backdrop-blur-md text-white text-[10px] font-black px-4 py-2 rounded-full uppercase tracking-widest">Research</div>
+                  <ShieldAlert className="w-24 h-24 text-blue-900 opacity-50 transform group-hover:scale-110 transition-transform duration-500" />
+                  <div className="absolute top-4 left-4 bg-white/20 backdrop-blur-md text-white text-[10px] font-black px-4 py-2 rounded-full uppercase tracking-widest">RegTech</div>
                </div>
-               <h3 className="text-3xl font-black mb-4 leading-tight">Microcloud Lab <br/> Infrastructure</h3>
+               <h3 className="text-3xl font-black mb-4 leading-tight">Gazette Watch</h3>
                <p className="text-base text-neutral-400 mb-8 font-medium leading-relaxed">
-                 Self-hosted private cloud (VirtualBox, Ubuntu, Nextcloud) for prototyping resilient deployment architectures in low-connectivity edge environments.
+                 Kenya Gazette regulatory monitoring, classification, and personalized digest pipeline.
                </p>
                <div className="flex gap-2 flex-wrap mb-6">
-                 <span className="bg-white/10 text-white text-[10px] px-3 py-1.5 rounded-full font-bold uppercase tracking-wider">Ubuntu</span>
-                 <span className="bg-white/10 text-white text-[10px] px-3 py-1.5 rounded-full font-bold uppercase tracking-wider">VirtualBox</span>
-                 <span className="bg-white/10 text-white text-[10px] px-3 py-1.5 rounded-full font-bold uppercase tracking-wider">Nextcloud</span>
+                 <span className="bg-white/10 text-white text-[10px] px-3 py-1.5 rounded-full font-bold uppercase tracking-wider">Monitoring</span>
+                 <span className="bg-white/10 text-white text-[10px] px-3 py-1.5 rounded-full font-bold uppercase tracking-wider">Classification</span>
+                 <span className="bg-white/10 text-white text-[10px] px-3 py-1.5 rounded-full font-bold uppercase tracking-wider">Digest</span>
                </div>
+             </motion.div>
+
+             {/* Card 4 */}
+             <motion.div 
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-100px" }}
+              transition={{ duration: 0.5, delay: 0.1 }}
+              className="bg-[#2A2B2E] rounded-[2rem] p-6 md:p-8 group hover:-translate-y-4 transition-transform duration-500 shadow-2xl relative"
+             >
+              <div className="bg-neutral-600 h-56 rounded-3xl mb-8 p-6 flex items-center justify-center relative overflow-hidden">
+                 <Layers className="w-24 h-24 text-neutral-900 opacity-40 transform group-hover:scale-110 transition-transform duration-500" />
+                 <div className="absolute top-4 left-4 bg-white/20 backdrop-blur-md text-white text-[10px] font-black px-4 py-2 rounded-full uppercase tracking-widest">Land Registry</div>
+              </div>
+              <h3 className="text-3xl font-black mb-4 leading-tight">Ardhi-X</h3>
+              <p className="text-base text-neutral-400 mb-8 font-medium leading-relaxed">
+                Anti-fraud land registry system.
+              </p>
+              <div className="flex gap-2 flex-wrap mb-6">
+                <span className="bg-white/10 text-white text-[10px] px-3 py-1.5 rounded-full font-bold uppercase tracking-wider">Registry</span>
+                <span className="bg-white/10 text-white text-[10px] px-3 py-1.5 rounded-full font-bold uppercase tracking-wider">Fraud Prevention</span>
+              </div>
+             </motion.div>
+
+             {/* Card 5 */}
+             <motion.div 
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-100px" }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+              className="bg-[#2A2B2E] rounded-[2rem] p-6 md:p-8 group hover:-translate-y-4 transition-transform duration-500 shadow-2xl relative"
+             >
+              <div className="bg-[#FFC83A] h-56 rounded-3xl mb-8 p-6 flex items-center justify-center relative overflow-hidden">
+                 <Code className="w-24 h-24 text-yellow-900 opacity-40 transform group-hover:scale-110 transition-transform duration-500" />
+                 <div className="absolute top-4 left-4 bg-white/20 backdrop-blur-md text-yellow-900 text-[10px] font-black px-4 py-2 rounded-full uppercase tracking-widest">Knowledge Platform</div>
+              </div>
+              <h3 className="text-3xl font-black mb-4 leading-tight">The Engineer&apos;s Journal</h3>
+              <p className="text-base text-neutral-400 mb-8 font-medium leading-relaxed">
+                Markdown/frontmatter content platform with a Zod-validated schema, built on Cloudflare Pages/Workers.
+              </p>
+              <div className="flex gap-2 flex-wrap mb-6">
+                <span className="bg-white/10 text-white text-[10px] px-3 py-1.5 rounded-full font-bold uppercase tracking-wider">Markdown</span>
+                <span className="bg-white/10 text-white text-[10px] px-3 py-1.5 rounded-full font-bold uppercase tracking-wider">Zod</span>
+                <span className="bg-white/10 text-white text-[10px] px-3 py-1.5 rounded-full font-bold uppercase tracking-wider">Cloudflare</span>
+              </div>
+              <a href="https://theengineersjournal.ansaitechnologies.co.ke/" target="_blank" rel="noreferrer" className="absolute top-12 right-12 bg-white text-[#1C1D20] p-3 rounded-full hover:scale-110 transition-transform shadow-lg">
+                <ExternalLink className="w-5 h-5" />
+              </a>
              </motion.div>
           </div>
         </div>
