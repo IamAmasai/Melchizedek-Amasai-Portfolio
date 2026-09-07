@@ -162,7 +162,7 @@ export default function App() {
           </h1>
           
           <p className="text-lg md:text-xl text-neutral-600 max-w-lg font-medium leading-relaxed">
-            Systems administrator and cloud engineer building the operational infrastructure for African institutions. We build for the actual conditions, not despite them.
+            Systems thinker and cloud engineer building the operational infrastructure for African institutions. We build for the actual conditions, not despite them.
           </p>
 
           <div className="flex flex-wrap items-center gap-4 pt-4">
@@ -463,9 +463,14 @@ export default function App() {
               </div>
               <h2 className="text-4xl md:text-5xl lg:text-6xl font-black tracking-tighter">Projects &amp; Prototypes</h2>
             </div>
-            <a href="https://github.com/IamAmasai" target="_blank" rel="noreferrer" className="flex items-center gap-3 font-bold text-lg hover:text-[#FFC83A] transition-colors pb-2 border-b-2 border-transparent hover:border-[#FFC83A]">
-              View All Repos <ArrowRight className="w-6 h-6"/>
-            </a>
+            <div className="flex flex-col items-start md:items-end gap-3">
+              <a href="https://github.com/IamAmasai" target="_blank" rel="noreferrer" className="flex items-center gap-3 font-bold text-lg hover:text-[#FFC83A] transition-colors pb-2 border-b-2 border-transparent hover:border-[#FFC83A]">
+                View All Repos <ArrowRight className="w-6 h-6"/>
+              </a>
+              <a href="https://theengineersjournal.ansaitechnologies.co.ke/" target="_blank" rel="noreferrer" className="flex items-center gap-3 font-bold text-base hover:text-[#FFC83A] transition-colors pb-1 border-b border-transparent hover:border-[#FFC83A]">
+                The Engineers Journal <ExternalLink className="w-4 h-4"/>
+              </a>
+            </div>
           </motion.div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10">
