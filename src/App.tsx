@@ -90,7 +90,7 @@ export default function App() {
       const lower = userMsg.toLowerCase();
       
       if (lower.includes('safaricom') || lower.includes('experience')) {
-        reply = 'At Safaricom PLC (May-Oct 2025), I served as a Cloud Engineer administering 47 production Linux and Windows servers with 99.99% uptime SLAs. I built Python and Bash automation scripts for system health monitoring and acted as the DRI (Designated Responsible Individual) for cross-functional incident response.';
+        reply = 'At Safaricom PLC (May-Oct 2025), I served as a Cloud Engineer managing production Linux and Windows environments, building Python and Bash automation for system health monitoring, and acting as the DRI (Designated Responsible Individual) for cross-functional incident response.';
       } else if (lower.includes('stack') || lower.includes('technologies') || lower.includes('tech')) {
         reply = 'Core Stack:\n- Systems & Virt: Linux, Windows Server, VirtualBox, Active Directory\n- Cloud & Infra: GCP (Cloud Run, BigQuery, IAM), Cloudflare, Render, AWS\n- DevOps: GitHub Actions CI/CD, Python/Bash automation\n- DBs: PostgreSQL, Prisma, Supabase\n- Security: 22-role RBAC, Kenya Data Protection Act 2019 compliance.';
       } else if (lower.includes('edumanage') || lower.includes('architecture')) {
@@ -365,7 +365,7 @@ export default function App() {
                    <Cloud className="w-4 h-4"/> Safaricom PLC
                  </div>
                  <p className="text-base text-neutral-600 font-medium leading-relaxed">
-                   Administered 47 production Linux/Windows servers (99.99% SLA). Built microcloud test environments (VirtualBox, Ubuntu) and Python/Bash automation for health monitoring. Acted as DRI for incident response coordinating cross-functional teams.
+                   Served as a Cloud Engineer supporting production Linux/Windows environments, building microcloud test environments (VirtualBox, Ubuntu), and developing Python/Bash automation for health monitoring. Acted as DRI for incident response coordinating cross-functional teams.
                  </p>
                </div>
             </motion.div>
