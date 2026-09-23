@@ -518,7 +518,7 @@ export default function App() {
                   <Cpu className="w-24 h-24 text-teal-900 opacity-50 transform group-hover:scale-110 transition-transform duration-500" />
                   <div className="absolute top-4 left-4 bg-white/10 backdrop-blur-md text-white text-[10px] font-black px-4 py-2 rounded-full uppercase tracking-widest">Marketplace</div>
                </div>
-               <h3 className="text-3xl font-black mb-4 leading-tight">The Closet</h3>
+               <h3 className="text-3xl font-black mb-4 leading-tight">Looply</h3>
                <p className="text-base text-neutral-400 mb-8 font-medium leading-relaxed">
                  Chat-first, escrow-backed P2P resale marketplace for pre-owned clothing in Kenya.
                </p>
