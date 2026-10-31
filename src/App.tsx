@@ -92,7 +92,7 @@ export default function App() {
       if (lower.includes('safaricom') || lower.includes('experience')) {
         reply = 'At Safaricom PLC (May-Oct 2025), I served as a Cloud Engineer managing production Linux and Windows environments, building Python and Bash automation for system health monitoring, and acting as the DRI (Designated Responsible Individual) for cross-functional incident response.';
       } else if (lower.includes('stack') || lower.includes('technologies') || lower.includes('tech')) {
-        reply = 'Core Stack:\n- Systems & Virt: Linux, Windows Server, VirtualBox, Active Directory\n- Cloud & Infra: GCP (Cloud Run, BigQuery, IAM), Cloudflare, Render, AWS\n- DevOps: GitHub Actions CI/CD, Python/Bash automation\n- DBs: PostgreSQL, Prisma, Supabase\n- Security: 22-role RBAC, Kenya Data Protection Act 2019 compliance.';
+        reply = 'Core Stack:\n- Systems & Virt: Linux, Windows Server, VirtualBox, Active Directory\n- Cloud & Infra: Vercel, Supabase, Cloudflare, GCP, AWS\n- DevOps: GitHub Actions CI/CD, Python/Bash automation\n- DBs: PostgreSQL, Prisma, Supabase\n- Security: 22-role RBAC, Kenya Data Protection Act 2019 compliance.';
       } else if (lower.includes('edumanage') || lower.includes('architecture')) {
         reply = 'EduManage (live at edumanage.co.ke) is a multi-tenant TypeScript/Fastify/Prisma/PostgreSQL platform. It handles M-PESA fee payments, CBC/CBE grading compliance, and features a strict 22-role RBAC system for secondary schools across Kenya.';
       } else if (lower.includes('philosophy') || lower.includes('utu') || lower.includes('stewardship')) {
@@ -135,6 +135,7 @@ export default function App() {
           <a href="#about" className="hover:text-[#FFC83A] transition-colors">Philosophy</a>
           <a href="#experience" className="hover:text-[#FFC83A] transition-colors">Experience</a>
           <a href="#works" className="hover:text-[#FFC83A] transition-colors">Infrastructure</a>
+          <a href="#resilience" className="hover:text-[#FFC83A] transition-colors">Resilience</a>
           <a href="#terminal" className="hover:text-[#FFC83A] transition-colors">Terminal</a>
         </div>
 
@@ -153,7 +154,7 @@ export default function App() {
         >
           <div className="inline-flex items-center gap-3">
              <span className="w-10 h-[3px] bg-[#FFC83A]"></span>
-             <span className="text-[#FFC83A] font-black text-xs lg:text-sm tracking-[0.2em] uppercase">Cloud Engineer &amp; Systems Thinker</span>
+             <span className="text-[#FFC83A] font-black text-xs lg:text-sm tracking-[0.2em] uppercase">Software Engineer &amp; Systems Thinker</span>
           </div>
           
           <h1 className="text-[2.8rem] md:text-[4rem] lg:text-[5rem] font-black tracking-tighter leading-[1] text-[#1C1D20]">
@@ -162,7 +163,7 @@ export default function App() {
           </h1>
           
           <p className="text-lg md:text-xl text-neutral-600 max-w-lg font-medium leading-relaxed">
-            Systems thinker and cloud engineer building the operational infrastructure for African institutions. We build for the actual conditions, not despite them.
+            Software engineer and systems thinker building the operational infrastructure for African institutions. We build for the actual conditions, not despite them.
           </p>
 
           <div className="flex flex-wrap items-center gap-4 pt-4">
@@ -174,6 +175,9 @@ export default function App() {
             </a>
             <a href="https://ansaitechnologies.co.ke/" target="_blank" rel="noreferrer" className="flex items-center gap-2 bg-white px-5 py-3 rounded-xl shadow-sm border border-neutral-200 hover:border-[#FFC83A] font-bold text-sm transition-colors">
               <Layers className="w-4 h-4" /> Ansai Tech
+            </a>
+            <a href="https://orcid.org/0009-0004-8500-8251" target="_blank" rel="noreferrer" className="flex items-center gap-2 bg-white px-5 py-3 rounded-xl shadow-sm border border-neutral-200 hover:border-[#1B4B43] font-bold text-sm transition-colors">
+              <Award className="w-4 h-4" /> ORCID iD
             </a>
           </div>
         </motion.div>
@@ -205,16 +209,6 @@ export default function App() {
           </div>
 
           {/* Floating Badges */}
-          <div className="absolute -left-4 md:-left-12 bottom-12 md:bottom-24 bg-white p-5 rounded-3xl shadow-2xl z-20 flex items-center gap-5 transform -rotate-3 hover:rotate-0 transition-transform duration-300">
-             <div className="w-14 h-14 rounded-full bg-[#FFC83A] flex items-center justify-center text-white shadow-inner">
-               <Cloud className="w-7 h-7 text-[#1C1D20]" />
-             </div>
-             <div>
-               <div className="font-black text-lg uppercase tracking-wider text-[#1C1D20]">GCP Certified</div>
-               <div className="text-sm text-neutral-500 font-bold">Cloud Developer &amp; DB Engineer</div>
-             </div>
-          </div>
-
           <div className="absolute right-0 lg:-right-4 top-12 md:top-24 bg-white p-4 rounded-2xl shadow-xl z-20 transform rotate-6 hover:rotate-0 transition-transform duration-300">
              <div className="text-sm font-black text-[#1B4B43] flex items-center gap-2 uppercase tracking-wider">
                <Award className="w-5 h-5 text-[#FFC83A]"/> GitHub Campus Expert
@@ -270,7 +264,7 @@ export default function App() {
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-black tracking-tighter text-[#1C1D20] leading-[1.1]">About Me</h2>
             <div className="space-y-6 text-lg md:text-xl text-neutral-600 font-medium leading-relaxed">
               <p>
-                Juma Melchizedek Amasai (Amasai), based in Nairobi, Kenya. Founder &amp; CEO of Ansai Technologies, a holding company building digital infrastructure for African organizations and currently undergoing a foundational restructuring around AI-native organization design. Also CEO of Beautify by Angel.
+                Juma Melchizedek Amasai (Amasai), based in Nairobi, Kenya. Founder &amp; Lead Engineer of Ansai Technologies (est. 2026), building digital infrastructure for African organizations — now being rebuilt around AI-native organization design. Technology partner to Beautify by Angel.
               </p>
               <p className="p-6 bg-[#FDF9F1] rounded-3xl border border-[#FFC83A]/30 text-[#1C1D20]">
                 GitHub Campus Expert and GDG Nairobi member. Systems thinker specializing in AI infrastructure, the agentic layer, and the inference/deployment stack. Recently launched <a href="https://theengineersjournal.ansaitechnologies.co.ke/" target="_blank" rel="noreferrer" className="underline decoration-2 underline-offset-4">The Engineer&apos;s Journal</a>, a systems-thinking knowledge platform under Ansai.
@@ -342,14 +336,14 @@ export default function App() {
                <div className="flex items-center justify-center w-12 h-12 rounded-full border-[6px] border-[#FDF9F1] bg-[#1B4B43] shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10"></div>
                <div className="w-[calc(100%-4rem)] md:w-[calc(50%-3rem)] bg-white p-6 md:p-8 rounded-[2rem] shadow-xl border border-neutral-100 hover:-translate-y-2 transition-transform duration-300">
                  <div className="flex flex-wrap items-center justify-between mb-4 gap-2">
-                    <h3 className="font-black text-2xl text-[#1C1D20]">Founder &amp; CEO</h3>
-                    <span className="font-bold text-xs bg-[#FFC83A]/20 text-[#D99A00] px-3 py-1.5 rounded-full uppercase tracking-wider whitespace-nowrap">2024 - Present</span>
+                    <h3 className="font-black text-2xl text-[#1C1D20]">Founder &amp; Lead Engineer</h3>
+                    <span className="font-bold text-xs bg-[#FFC83A]/20 text-[#D99A00] px-3 py-1.5 rounded-full uppercase tracking-wider whitespace-nowrap">2026 - Present</span>
                  </div>
                  <div className="flex items-center gap-2 font-bold text-sm text-[#1B4B43] mb-5 uppercase tracking-widest">
                    <Globe className="w-4 h-4"/> Ansai Technologies
                  </div>
                  <p className="text-base text-neutral-600 font-medium leading-relaxed">
-                   Independently architected and maintains the full infrastructure stack for a live multi-tenant production system (Render, Cloudflare Pages, R2). Designed a 22-role RBAC system fully compliant with the Kenya Data Protection Act 2019.
+                   Independently architected and maintains the full infrastructure stack for a live multi-tenant production system (Vercel and Supabase). Designed a 22-role RBAC system fully compliant with the Kenya Data Protection Act 2019.
                  </p>
                </div>
             </motion.div>
@@ -494,7 +488,7 @@ export default function App() {
                </div>
                <h3 className="text-3xl font-black mb-4 leading-tight">EduManage <br/> Platform</h3>
                <p className="text-base text-neutral-400 mb-8 font-medium leading-relaxed">
-                 Production multi-tenant school management platform for Kenyan secondary schools (TypeScript, Fastify, Prisma, PostgreSQL, React/Vite, Cloudflare Pages/R2). CBC/CBE compliance, M-PESA Daraja integration, and 22-role RBAC. Actively deployed with partner schools.
+                 Production multi-tenant school management platform for Kenyan secondary schools (TypeScript, Fastify, Prisma, PostgreSQL, React/Vite), hosted on Vercel with Supabase. CBC/CBE compliance, M-PESA Daraja integration, and 22-role RBAC. Actively deployed with partner schools.
                </p>
                <div className="flex gap-2 flex-wrap mb-6">
                  <span className="bg-white/10 text-white text-[10px] px-3 py-1.5 rounded-full font-bold uppercase tracking-wider">Fastify</span>
@@ -599,6 +593,138 @@ export default function App() {
                 <ExternalLink className="w-5 h-5" />
               </a>
              </motion.div>
+
+             {/* Card 6 */}
+             <motion.div
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-100px" }}
+              transition={{ duration: 0.5, delay: 0.1 }}
+              className="bg-[#2A2B2E] rounded-[2rem] p-6 md:p-8 group hover:-translate-y-4 transition-transform duration-500 shadow-2xl relative"
+             >
+              <div className="bg-teal-600 h-56 rounded-3xl mb-8 p-6 flex items-center justify-center relative overflow-hidden">
+                 <CheckCircle2 className="w-24 h-24 text-teal-900 opacity-50 transform group-hover:scale-110 transition-transform duration-500" />
+                 <div className="absolute top-4 left-4 bg-white/20 backdrop-blur-md text-white text-[10px] font-black px-4 py-2 rounded-full uppercase tracking-widest">Platform</div>
+              </div>
+              <h3 className="text-3xl font-black mb-4 leading-tight">Attest</h3>
+              <p className="text-base text-neutral-400 mb-8 font-medium leading-relaxed">
+                Attestation infrastructure for institutions and the agents that act for them: verified identity, tamper-evident records, and an audit trail behind every consequential action.
+              </p>
+              <div className="flex gap-2 flex-wrap mb-6">
+                <span className="bg-white/10 text-white text-[10px] px-3 py-1.5 rounded-full font-bold uppercase tracking-wider">Attestation</span>
+                <span className="bg-white/10 text-white text-[10px] px-3 py-1.5 rounded-full font-bold uppercase tracking-wider">Identity</span>
+                <span className="bg-white/10 text-white text-[10px] px-3 py-1.5 rounded-full font-bold uppercase tracking-wider">Audit Trails</span>
+              </div>
+              <a href="https://attestation.ansaitechnologies.co.ke/" target="_blank" rel="noreferrer" className="absolute top-12 right-12 bg-white text-[#1C1D20] p-3 rounded-full hover:scale-110 transition-transform shadow-lg">
+                <ExternalLink className="w-5 h-5" />
+              </a>
+             </motion.div>
+
+             {/* Card 7 */}
+             <motion.div
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-100px" }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+              className="bg-[#2A2B2E] rounded-[2rem] p-6 md:p-8 group hover:-translate-y-4 transition-transform duration-500 shadow-2xl relative"
+             >
+              <div className="bg-sky-600 h-56 rounded-3xl mb-8 p-6 flex items-center justify-center relative overflow-hidden">
+                 <Lock className="w-24 h-24 text-sky-900 opacity-50 transform group-hover:scale-110 transition-transform duration-500" />
+                 <div className="absolute top-4 left-4 bg-white/20 backdrop-blur-md text-white text-[10px] font-black px-4 py-2 rounded-full uppercase tracking-widest">Identity</div>
+              </div>
+              <h3 className="text-3xl font-black mb-4 leading-tight">Ansai ID</h3>
+              <p className="text-base text-neutral-400 mb-8 font-medium leading-relaxed">
+                One identity across the Ansai ecosystem. People enrol once, every application is reviewed by a person, and agents act only under a named human&apos;s approval — identity before action.
+              </p>
+              <div className="flex gap-2 flex-wrap mb-6">
+                <span className="bg-white/10 text-white text-[10px] px-3 py-1.5 rounded-full font-bold uppercase tracking-wider">Enrolment</span>
+                <span className="bg-white/10 text-white text-[10px] px-3 py-1.5 rounded-full font-bold uppercase tracking-wider">Approvals</span>
+                <span className="bg-white/10 text-white text-[10px] px-3 py-1.5 rounded-full font-bold uppercase tracking-wider">SSO</span>
+              </div>
+              <a href="https://id.ansaitechnologies.co.ke/" target="_blank" rel="noreferrer" className="absolute top-12 right-12 bg-white text-[#1C1D20] p-3 rounded-full hover:scale-110 transition-transform shadow-lg">
+                <ExternalLink className="w-5 h-5" />
+              </a>
+             </motion.div>
+
+             {/* Card 8 */}
+             <motion.div
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-100px" }}
+              transition={{ duration: 0.5, delay: 0.3 }}
+              className="bg-[#2A2B2E] rounded-[2rem] p-6 md:p-8 group hover:-translate-y-4 transition-transform duration-500 lg:translate-y-8 shadow-2xl relative"
+             >
+              <div className="bg-yellow-500 h-56 rounded-3xl mb-8 p-6 flex items-center justify-center relative overflow-hidden">
+                 <Database className="w-24 h-24 text-yellow-900 opacity-40 transform group-hover:scale-110 transition-transform duration-500" />
+                 <div className="absolute top-4 left-4 bg-white/20 backdrop-blur-md text-yellow-900 text-[10px] font-black px-4 py-2 rounded-full uppercase tracking-widest">Bookkeeping</div>
+              </div>
+              <h3 className="text-3xl font-black mb-4 leading-tight">Hazina</h3>
+              <p className="text-base text-neutral-400 mb-8 font-medium leading-relaxed">
+                Bookkeeping for Kenya&apos;s digitising tax system: M-Pesa statements and receipt photos in; reconciled books, an eTIMS-flagged register and a Turnover Tax pack out. Built to help small and micro businesses keep up.
+              </p>
+              <div className="flex gap-2 flex-wrap mb-6">
+                <span className="bg-white/10 text-white text-[10px] px-3 py-1.5 rounded-full font-bold uppercase tracking-wider">KRA</span>
+                <span className="bg-white/10 text-white text-[10px] px-3 py-1.5 rounded-full font-bold uppercase tracking-wider">Turnover Tax</span>
+                <span className="bg-white/10 text-white text-[10px] px-3 py-1.5 rounded-full font-bold uppercase tracking-wider">eTIMS</span>
+              </div>
+              <a href="https://hazina.ansaitechnologies.co.ke/" target="_blank" rel="noreferrer" className="absolute top-12 right-12 bg-white text-[#1C1D20] p-3 rounded-full hover:scale-110 transition-transform shadow-lg">
+                <ExternalLink className="w-5 h-5" />
+              </a>
+             </motion.div>
+          </div>
+        </div>
+      </section>
+
+      {/* RESILIENCE PRACTICE */}
+      <section id="resilience" className="bg-white py-24 md:py-32 relative z-10">
+        <div className="max-w-7xl mx-auto px-6 md:px-12">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-100px" }}
+            className="text-center mb-16 max-w-3xl mx-auto"
+          >
+             <div className="inline-flex items-center justify-center gap-3 mb-4">
+                <span className="w-8 h-[3px] bg-[#1B4B43]"></span>
+                <span className="text-[#1B4B43] font-black text-xs md:text-sm tracking-[0.2em] uppercase">Resilience Practice</span>
+                <span className="w-8 h-[3px] bg-[#1B4B43]"></span>
+             </div>
+             <h2 className="text-4xl md:text-5xl lg:text-6xl font-black text-[#1C1D20] tracking-tighter mb-6">Built to survive the conditions.</h2>
+             <p className="text-lg md:text-xl text-neutral-600 font-medium leading-relaxed">
+               Anyone can build infrastructure that works on a good day. Our practice is about the bad ones — outages, attacks, honest mistakes — and what a system owes the people who depend on it when they happen.
+             </p>
+          </motion.div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+             <div className="bg-[#FDF9F1] p-6 md:p-8 rounded-3xl border border-neutral-200 shadow-sm">
+               <div className="bg-[#1B4B43] text-white p-3 rounded-xl w-fit mb-5"><Server className="w-6 h-6"/></div>
+               <h3 className="text-xl font-black text-[#1C1D20] mb-3">Monitoring &amp; Alerting</h3>
+               <p className="text-base text-neutral-600 font-medium leading-relaxed">Production systems are watched continuously. When something fails, a person hears about it on the channels they actually read — not as a line in a log nobody opens.</p>
+             </div>
+
+             <div className="bg-[#FDF9F1] p-6 md:p-8 rounded-3xl border border-neutral-200 shadow-sm">
+               <div className="bg-[#1B4B43] text-white p-3 rounded-xl w-fit mb-5"><Lock className="w-6 h-6"/></div>
+               <h3 className="text-xl font-black text-[#1C1D20] mb-3">Identity Before Action</h3>
+               <p className="text-base text-neutral-600 font-medium leading-relaxed">People and software agents prove who they are before they can act, and anything irreversible waits for a named person&apos;s approval.</p>
+             </div>
+
+             <div className="bg-[#FDF9F1] p-6 md:p-8 rounded-3xl border border-neutral-200 shadow-sm">
+               <div className="bg-[#1B4B43] text-white p-3 rounded-xl w-fit mb-5"><CheckCircle2 className="w-6 h-6"/></div>
+               <h3 className="text-xl font-black text-[#1C1D20] mb-3">Audit Trails &amp; Decision Records</h3>
+               <p className="text-base text-neutral-600 font-medium leading-relaxed">Every consequential decision is written down with its reasons, so any figure or action can later be traced, checked and recomputed.</p>
+             </div>
+
+             <div className="bg-[#FDF9F1] p-6 md:p-8 rounded-3xl border border-neutral-200 shadow-sm">
+               <div className="bg-[#1B4B43] text-white p-3 rounded-xl w-fit mb-5"><ShieldAlert className="w-6 h-6"/></div>
+               <h3 className="text-xl font-black text-[#1C1D20] mb-3">Least-Privilege Access</h3>
+               <p className="text-base text-neutral-600 font-medium leading-relaxed">Every account, key and agent holds only the access its job requires. Broad standing access is treated as a risk, not a convenience.</p>
+             </div>
+
+             <div className="bg-[#FDF9F1] p-6 md:p-8 rounded-3xl border border-neutral-200 shadow-sm">
+               <div className="bg-[#1B4B43] text-white p-3 rounded-xl w-fit mb-5"><Database className="w-6 h-6"/></div>
+               <h3 className="text-xl font-black text-[#1C1D20] mb-3">Data Sovereignty</h3>
+               <p className="text-base text-neutral-600 font-medium leading-relaxed">The records that matter most — keys, signing material and institutional data — are kept on hardware we own and control, not only on rented foreign cloud.</p>
+             </div>
           </div>
         </div>
       </section>
