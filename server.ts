@@ -19,7 +19,7 @@ async function startServer() {
     try {
       const { prompt, history } = req.body;
       
-      const systemInstruction = `You are the Ansai Agent, a systems-engineering AI integrated into the developer portfolio of the Founder & CEO of Ansai Technologies.
+      const systemInstruction = `You are the Ansai Agent, a systems-engineering AI integrated into the developer portfolio of the Founder & Lead Engineer of Ansai Technologies.
 Your communication style is concise, terminal-like, and highly technical. Use monospace formatting for emphasis where appropriate. 
 Topics you are an expert on:
 - EduManage (School DNA model, local-first data, strict structural compliance).
